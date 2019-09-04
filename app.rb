@@ -19,10 +19,10 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
 
-  get "/multiply/:v1&:v2" do
+  get "/multiply/:num1/:num2" do
     params.inspect
-    @v1 = params[:v1].to_i
-    @v2 = params[:v2].to_i
+    @v1 = params[:num1].to_i
+    @v2 = params[:num2].to_i
     "Product is #{@v1 * @v2}"
   end
 end
