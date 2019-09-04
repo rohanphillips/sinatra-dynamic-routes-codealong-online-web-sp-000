@@ -23,6 +23,6 @@ class App < Sinatra::Base
     params.inspect
     @v1 = params[:v1].to_i
     @v2 = params[:v2].to_i
-    #"Product is #{params[:v1] * params[:v2]}"
+    "Product is #{@v1 * @v2}"
   end
 end
