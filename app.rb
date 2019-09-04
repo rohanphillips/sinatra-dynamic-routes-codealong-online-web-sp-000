@@ -18,4 +18,8 @@ class App < Sinatra::Base
     @user_name = params[:name]
     "Goodbye #{@user_name}!"
   end
+
+  get "/multiply/:v1&:v2" do
+    "Product is #{params[:v1] * params[:v2]}"
+  end
 end
